@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Climate Pulse India</title>
+    <meta name="description" content="District forecasts, field reports, and historical evaluation for India.">
+    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-DJFeIpqu.js"></script>
+    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-Du3M4urW.css">
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="shell masthead-inner">
+        <div class="brand"><span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M3 17h7l4-8 4 15 4-7h7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span><span>Climate Pulse <span class="brand-country">India</span></span></div>
+        <span id="user-id" class="user-label" hidden></span>
+        <button type="button" id="sign-out" class="outline-button" hidden>Sign out</button>
+      </div>
+    </header>
+    <main class="shell">
+      <nav class="section-nav" aria-label="Climate Pulse sections">
+        <a href="#national-monitoring" aria-current="page">National Monitoring</a>
+        <a href="#field-reports">Field Reports</a>
+        <a href="#historical-evaluation">Historical &amp; Evaluation</a>
+      </nav>
+      <section id="field-reports" hidden>
+        <div class="page-intro"><h1>Field Reports</h1></div>
+        <section class="panel report-content" aria-label="District field reports">
+          <div id="report-login"><p>Sign in to view the reports you can access.</p><button class="primary-button" id="report-sign-in" type="button">Sign in with ArcGIS</button></div>
+          <p id="report-status" role="status"></p>
+          <div id="report-context" hidden></div>
+          <div id="report-records"></div>
+          <a id="report-edit-link" hidden target="_blank" rel="noopener">Open the ArcGIS report form ↗</a>
+        </section>
+      </section>
+      <section id="historical-evaluation" hidden>
+        <div class="page-intro"><h1>Historical &amp; Evaluation</h1></div>
+        <article class="panel report-content history-content" id="history-content">Loading evaluation…</article>
+      </section>
+      <div id="national-section">
+      <section class="login" id="access">
+        <div class="login-illustration" aria-hidden="true">
+          <svg viewBox="0 0 160 140" fill="none"><path d="M18 99h124M18 73h124M18 47h124M43 25v99M69 25v99M95 25v99M121 25v99" stroke="currentColor" opacity=".19"/><path d="M18 91l25-18 26 14 26-40 26 14 21-29" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="95" cy="47" r="5" fill="currentColor"/></svg>
+        </div>
+        <div class="login-copy">
+          <p class="eyebrow">INDIA · DISTRICT FORECASTS</p>
+          <h1>National Monitoring</h1>
+          <p class="intro">Explore persistent heat, excessive rainfall, and rainfall deficit across 735 districts. Compare hazard and population exposure for the next forecast period.</p>
+          <button id="sign-in" class="primary-button" type="button">Sign in with ArcGIS <span aria-hidden="true">↗</span></button>
+          <p class="login-status" id="access-status" role="status">Access is restricted to authorized ArcGIS users.</p>
+        </div>
+      </section>
+      <div id="workbench" hidden>
+        <div class="page-intro">
+          <div><p class="eyebrow">INDIA · DISTRICT FORECASTS</p><h1>National Monitoring</h1></div>
+          <dl class="forecast-meta" aria-label="Forecast metadata">
+            <div><dt>Forecast issued</dt><dd id="issued"></dd></div>
+            <div><dt>Target window</dt><dd id="target-period"></dd></div>
+          </dl>
+        </div>
+        <div class="segment panel monitoring-views" role="group" aria-label="Monitoring view">
+          <button id="national-view" type="button" aria-pressed="true">National hazards</button>
+          <button id="maternal-view" type="button" aria-pressed="false">Maternal Heat</button>
+        </div>
+        <section class="controls panel" aria-label="Forecast controls">
+          <div class="control-set"><span class="control-label" id="hazard-label">Hazard</span><div class="segment" id="hazard" role="group" aria-labelledby="hazard-label"></div></div>
+          <div class="control-set"><span class="control-label" id="lead-label">Forecast lead time</span><div class="segment" id="horizon" role="group" aria-labelledby="lead-label"></div></div>
+          <div class="control-set metric-control"><label for="metric" class="control-label">Ranking dimension</label><select id="metric"></select></div>
+          <div class="control-set"><label class="control-label" for="topk">Review budget</label><select id="topk"><option value="25">Top 25</option><option value="50">Top 50</option></select></div>
+        </section>
+        <div class="state-banner" id="state" role="status" aria-live="polite" hidden></div>
+        <div class="state-banner" id="pregnancy-guidance" hidden>
+          <strong>Maternal heat planning.</strong> Estimated annual pregnancies from WorldPop 2015 in the forecast heat footprint. Current pregnancy counts are unavailable. <a id="pregnancy-source" target="_blank" rel="noopener">WorldPop source</a>
+        </div>
+        <div class="workspace">
+          <section class="map-card panel" aria-label="National forecast map">
+            <header class="card-header"><div><h2 id="map-heading">District forecast</h2><p id="map-subtitle"></p></div><span class="coverage-tag" id="coverage-tag">735 districts</span></header>
+            <div class="map-stage">
+              <div class="map-canvas" id="map" aria-label="Interactive district forecast map"></div>
+              <div class="map-tools" aria-label="Map controls"><button id="zoom-in" type="button" aria-label="Zoom in">+</button><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="reset-map" type="button" aria-label="Reset to India" title="Reset to India">⌂</button></div>
+              <section class="legend" id="legend" aria-label="Map legend"></section>
+            </div>
+            <footer class="map-footer">Basemap: United Nations Clear Map | Source: UN Geospatial</footer>
+          </section>
+          <section class="ranking-card panel" aria-labelledby="ranking-heading">
+            <header class="card-header"><div><h2 id="ranking-heading">District priorities</h2><p id="rank-meta"></p></div></header>
+            <div class="ranking-scroll"><table class="rank-table"><thead><tr><th scope="col">Rank</th><th scope="col">District / State</th><th scope="col" id="metric-header">Exposure</th></tr></thead><tbody id="priority-list"></tbody></table></div>
+            <div class="rank-footer" id="rank-footer">Select a district to locate it on the map.</div>
+          </section>
+          <section class="details-card panel" aria-labelledby="details-heading">
+            <header class="card-header"><div><p class="eyebrow">DISTRICT DETAILS</p><h2 id="details-heading">Select a district</h2></div><button id="clear-district" type="button" class="outline-button" hidden>Clear selection</button></header>
+            <div id="district-details"><p class="details-placeholder">Choose a district on the map or in the ranking to view its forecast, population indicators, and evidence.</p></div>
+          </section>
+        </div>
+        <details class="panel readiness" id="maternal-readiness" hidden>
+          <summary>Health service readiness</summary>
+          <p>Not yet integrated. <a href="https://www.who.int/publications/i/item/9789240125063">WHO maternal, newborn and child health heat indicators ↗</a></p>
+          <div id="readiness-indicators"></div>
+        </details>
+        <footer class="page-footer"><span>Climate Pulse India · Forecast release <span id="release"></span></span><a id="legacy" target="_blank" rel="noopener">Original Experience ↗</a></footer>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
