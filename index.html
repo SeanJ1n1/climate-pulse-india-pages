@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Climate Pulse India</title>
     <meta name="description" content="District forecasts, field reports, and historical evaluation for India.">
-    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-DJFeIpqu.js"></script>
-    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-Du3M4urW.css">
+    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-DrtHeRbg.js"></script>
+    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-Lvx88g4C.css">
   </head>
   <body>
     <header class="masthead">
@@ -33,7 +33,7 @@
           <p id="report-status" role="status"></p>
           <div id="report-context" hidden></div>
           <div id="report-records"></div>
-          <a id="report-edit-link" hidden target="_blank" rel="noopener">Open the ArcGIS report form ↗</a>
+          <p>Submit new reports and corrections from the Android app.</p>
         </section>
       </section>
       <section id="historical-evaluation" hidden>
@@ -57,7 +57,7 @@
         <div class="page-intro">
           <div><p class="eyebrow">INDIA · DISTRICT FORECASTS</p><h1>National Monitoring</h1></div>
           <dl class="forecast-meta" aria-label="Forecast metadata">
-            <div><dt>Forecast issued</dt><dd id="issued"></dd></div>
+            <div><dt>GEFS initialized</dt><dd id="issued"></dd></div>
             <div><dt>Target window</dt><dd id="target-period"></dd></div>
           </dl>
         </div>
@@ -67,7 +67,7 @@
         </div>
         <section class="controls panel" aria-label="Forecast controls">
           <div class="control-set"><span class="control-label" id="hazard-label">Hazard</span><div class="segment" id="hazard" role="group" aria-labelledby="hazard-label"></div></div>
-          <div class="control-set"><span class="control-label" id="lead-label">Forecast lead time</span><div class="segment" id="horizon" role="group" aria-labelledby="lead-label"></div></div>
+          <div class="control-set"><span class="control-label" id="lead-label">Forecast window</span><div class="segment" id="horizon" role="group" aria-labelledby="lead-label"></div></div>
           <div class="control-set metric-control"><label for="metric" class="control-label">Ranking dimension</label><select id="metric"></select></div>
           <div class="control-set"><label class="control-label" for="topk">Review budget</label><select id="topk"><option value="25">Top 25</option><option value="50">Top 50</option></select></div>
         </section>
@@ -95,10 +95,10 @@
             <div id="district-details"><p class="details-placeholder">Choose a district on the map or in the ranking to view its forecast, population indicators, and evidence.</p></div>
           </section>
         </div>
-        <details class="panel readiness" id="maternal-readiness" hidden>
+        <details class="panel readiness" id="maternal-readiness" open hidden>
           <summary>Health service readiness</summary>
-          <p>Not yet integrated. <a href="https://www.who.int/publications/i/item/9789240125063">WHO maternal, newborn and child health heat indicators ↗</a></p>
-          <div id="readiness-indicators"></div>
+          <p><a href="https://www.who.int/publications/i/item/9789240125063">WHO maternal, newborn and child health heat indicators ↗</a></p>
+          <div id="readiness-indicators">Select a district to review health service readiness.</div>
         </details>
         <footer class="page-footer"><span>Climate Pulse India · Forecast release <span id="release"></span></span><a id="legacy" target="_blank" rel="noopener">Original Experience ↗</a></footer>
       </div>

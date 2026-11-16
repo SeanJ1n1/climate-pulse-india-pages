@@ -1,1 +1,0 @@
-import{U as a,V as c}from"./FeatureLayer-BzNl6AQa.js";function s(r){return{geometryType:a(r[0]),geometries:r.map(t=>t.toJSON())}}function f(r,t,o){const n=c(t);return r.map(m=>{const e=n.fromJSON(m);return e.spatialReference=o,e})}export{f as o,s as r};
