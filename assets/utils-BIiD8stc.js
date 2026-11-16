@@ -1,1 +1,0 @@
-import{Y as a,Z as c}from"./report-store-CN9QpiJe.js";function s(r){return{geometryType:a(r[0]),geometries:r.map(t=>t.toJSON())}}function f(r,t,o){const n=c(t);return r.map(m=>{const e=n.fromJSON(m);return e.spatialReference=o,e})}export{f as o,s as r};
