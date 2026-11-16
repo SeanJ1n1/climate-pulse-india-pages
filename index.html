@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Climate Pulse India</title>
     <meta name="description" content="District forecasts, field reports, and historical evaluation for India.">
-    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-C7pZXnFk.js"></script>
+    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-U3T9EtSR.js"></script>
     <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-CLDb-tb1.css">
   </head>
   <body>
@@ -56,9 +56,13 @@
       <div id="workbench" hidden>
         <div class="page-intro">
           <div><p class="eyebrow">INDIA · DISTRICT FORECASTS</p><h1>National Monitoring</h1></div>
-          <dl class="forecast-meta" aria-label="Forecast metadata">
-            <div><dt>GEFS initialized</dt><dd id="issued"></dd></div>
-            <div><dt>Target window</dt><dd id="target-period"></dd></div>
+          <dl class="forecast-meta" aria-label="Forecast schedule and map dates">
+            <div id="forecast-calendar" hidden>
+              <dt>Latest GEFS cycle</dt><dd id="forecast-cycle"></dd>
+              <dt>Scheduled days 15–28</dt><dd id="planned-window"></dd>
+            </div>
+            <div><dt>Map GEFS initialized</dt><dd id="issued"></dd></div>
+            <div><dt>Map target window</dt><dd id="target-period"></dd></div>
           </dl>
         </div>
         <div class="segment panel monitoring-views" role="group" aria-label="Monitoring view">
