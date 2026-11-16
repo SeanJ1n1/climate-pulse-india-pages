@@ -1,1 +1,0 @@
-import{j as t,k as r,l as e}from"./index-Drxeu-pE.js";import{cM as p,a4 as a}from"./report-store-CPr1WNd0.js";let o=class extends p{constructor(s){super(s),this.sourcePoint=null,this.mapPoint=null}};t([r()],o.prototype,"sourcePoint",void 0),t([r({type:a})],o.prototype,"mapPoint",void 0),o=t([e("esri.layers.support.ControlPoint")],o);export{o as p};
