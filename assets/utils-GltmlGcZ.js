@@ -1,0 +1,1 @@
+import{ah as m,ai as c}from"./report-store-ta5zAhil.js";function p(r){return{geometryType:m(r[0]),geometries:r.map(t=>t.toJSON())}}function s(r,t,o){const n=c(t);return r.map(a=>{const e=n.fromJSON(a);return e.spatialReference=o,e})}export{s as o,p as r};
