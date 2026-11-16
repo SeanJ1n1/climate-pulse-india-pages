@@ -1,0 +1,1 @@
+import{ak as m,al as c}from"./FeatureLayer-ABh-xPIA.js";function s(r){return{geometryType:m(r[0]),geometries:r.map(t=>t.toJSON())}}function f(r,t,o){const n=c(t);return r.map(a=>{const e=n.fromJSON(a);return e.spatialReference=o,e})}export{f as o,s as r};
