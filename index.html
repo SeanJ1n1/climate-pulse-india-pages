@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Climate Pulse India</title>
     <meta name="description" content="District forecasts, field reports, and historical evaluation for India.">
-    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-BRL4ovEl.js"></script>
-    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-BMFq_79M.css">
+    <script type="module" crossorigin src="./assets/index-9wWryBxE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CMTT1tyf.css">
   </head>
   <body>
     <header class="masthead">
@@ -47,6 +47,22 @@
         <div class="page-intro"><h1>Historical &amp; Evaluation</h1></div>
         <article class="panel report-content history-content" id="history-content">Loading evaluation…</article>
       </section>
+      <section id="service-access" hidden aria-label="Maternal Heat service access">
+        <div class="page-intro"><div><a href="#maternal-heat">National Monitoring / Maternal Heat</a>
+          <p class="eyebrow">Historical Scenario</p><h1>Service Access · Odisha Pilot</h1></div>
+          <div>Forecast issued: 2025-01-06<br>Target: 2025-01-20 to 2025-01-26</div></div>
+        <div class="panel pilot-controls">
+          <label>Map layer <select id="pilot-metric"></select></label>
+          <label>District <select id="pilot-district"></select></label>
+        </div>
+        <div class="pilot-layout"><section class="map-card panel">
+          <header class="card-header"><div><h2>Odisha · Five pilot districts</h2><p>Equal-weight registered FRU accessibility.</p></div></header>
+          <div id="pilot-map" aria-label="Five Odisha districts and verified First Referral Units"></div>
+          <div id="pilot-legend" aria-label="Layer legend"></div>
+          <p class="pilot-key">First Referral Units (FRUs): <b>●</b> serving pilot grids within 60 minutes · ○ other verified locations</p>
+        </section><section class="panel pilot-info" id="pilot-detail" aria-live="polite">Loading district data…</section></div>
+        <p class="pilot-method">Low access means the lowest quarter of the five districts’ road-scored female population aged 15–49, with ties shared proportionally. GEFS provides the heat forecast and WorldPop supplies population estimates. Access uses the January 2025 OpenStreetMap road network and registered FRUs with equal supply weights. Bed capacity and referral performance were not measured.</p>
+      </section>
       <div id="national-section">
       <section class="login" id="access">
         <div class="login-illustration" aria-hidden="true">
@@ -72,6 +88,7 @@
           <button id="national-view" type="button" aria-pressed="true">National hazards</button>
           <button id="maternal-view" type="button" aria-pressed="false">Maternal Heat</button>
         </div>
+        <a href="#maternal-service-access" class="outline-button pilot-entry" id="pilot-entry" hidden>Service Access · Odisha Pilot</a>
         <section class="controls panel" aria-label="Forecast controls">
           <div class="control-set"><span class="control-label" id="hazard-label">Hazard</span><div class="segment" id="hazard" role="group" aria-labelledby="hazard-label"></div></div>
           <div class="control-set"><span class="control-label" id="lead-label">Forecast window</span><div class="segment" id="horizon" role="group" aria-labelledby="lead-label"></div></div>
