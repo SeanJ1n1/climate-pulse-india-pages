@@ -1,0 +1,1 @@
+import{a_ as c,a$ as o,b0 as i,v as p}from"./report-store-BFaOgF1d.js";function x(r,t,s,e){if(c(r.spatialReference,s)){n[0]=r.x,n[1]=r.y;const f=r.z;return n[2]=f??e??0,o(n,r.spatialReference,0,t,s,0)}const a=i(r,s);return!!a&&(t[0]=a?.x,t[1]=a?.y,t[2]=a?.z??e??0,!0)}const n=p();export{x as i};

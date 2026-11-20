@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Climate Pulse India</title>
     <meta name="description" content="District forecasts, field reports, and historical evaluation for India.">
-    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-iDyqTyWa.js"></script>
-    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-CLDb-tb1.css">
+    <script type="module" crossorigin src="/climate-pulse-india-pages/assets/index-BRL4ovEl.js"></script>
+    <link rel="stylesheet" crossorigin href="/climate-pulse-india-pages/assets/index-BMFq_79M.css">
   </head>
   <body>
     <header class="masthead">
@@ -29,7 +29,14 @@
       <section id="field-reports" hidden>
         <div class="page-intro"><h1>Field Reports</h1></div>
         <section class="panel report-content" aria-label="District field reports">
-          <div id="report-login"><p>Sign in to view the reports you can access.</p><button class="primary-button" id="report-sign-in" type="button">Sign in with ArcGIS</button></div>
+          <div id="report-login">
+            <p>Use your ArcGIS account to view and review district reports.</p>
+            <div class="report-login-actions">
+              <button class="primary-button" id="report-sign-in" type="button">Sign in with ArcGIS</button>
+              <a class="outline-button" id="report-register" href="https://africageoportal.maps.arcgis.com/home/signin.html" target="_blank" rel="noopener noreferrer">Create a free ArcGIS account</a>
+            </div>
+            <p class="registration-help">On Africa GeoPortal, select the option to create an account. The project owner grants access to private reports.</p>
+          </div>
           <p id="report-status" role="status"></p>
           <div id="report-context" hidden></div>
           <div id="report-records"></div>
